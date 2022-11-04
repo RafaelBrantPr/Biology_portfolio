@@ -1,0 +1,66 @@
+/*Importando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*Cores*/
+:root{
+    --branco: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(rgb(53, 56, 207), rgb(22, 23, 97));
+}
+
+/*Cabeçalho*/
+header{
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+header .logo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--branco);
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.ON {
+    background-color: var(--branco);
+    color: rgb(22, 23, 97);
+
+}
