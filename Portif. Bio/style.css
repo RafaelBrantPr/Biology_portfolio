@@ -19,7 +19,48 @@ body{
 }
 
 /*Cabeçalho*/
-iframe#menu{
+header{
+    top: 0;
+    left: 0;
+    position: absolute;
+
     width: 100%;
-    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+header .logo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--branco);
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.ON {
+    background-color: var(--branco);
+    color: rgb(22, 23, 97);
+
 }
