@@ -1,0 +1,234 @@
+/*Importando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /**/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Fredoka+One&family=PT+Sans+Narrow&family=Press+Start+2P&family=Reem+Kufi+Fun&family=Rubik+Mono+One&family=Signika+Negative&family=Source+Code+Pro:ital@0;1&family=Space+Mono:ital@0;1&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Reem Kufi Fun', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Space Mono', monospace;
+font-family: 'Teko', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+/*Cores*/
+:root{
+    --branco: #fff;
+    --sec-color: #230769;
+}
+
+*{
+
+}
+
+body{
+    height: 4000px;
+    background: linear-gradient(rgb(174, 225, 255), rgb(31, 93, 129), rgb(17, 148, 126));
+    background-repeat: no-repeat;
+    backdrop-filter: blur(40px);
+}
+
+/*Cabeçalho*/
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 500px;
+}
+header div{
+    position: relative;
+    top: 200px;
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#PRH{
+    padding-top: 100px;
+}
+.folhas{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+}
+.sexuada{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.sexuada div{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 100px;
+    max-width: 1000px;
+}
+
+.meiose{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.meiose div{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 1000px;
+}
+
+.assexuada{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.muitadivpqp{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.muitadivpqp div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 10px;
+    max-width: 1400px;
+}
+.bacterias{
+    border-radius: 900px;
+    width: 700px;
+}
+
+/*ANIMAÇÂO (NÂO ME PERGUNTA O QUE EU FIZ)*/
+.waveTextAnimated {
+    display: flex;
+    flex-direction: row;
+    font-size: 80px;
+}
+.waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+    animation: wave-text 1s ease-in-out infinite;
+}
+.waveTextAnimated span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+.waveTextAnimated span:nth-of-type(2) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+.waveTextAnimated span:nth-of-type(3) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+.waveTextAnimated span:nth-of-type(4) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+.waveTextAnimated span:nth-of-type(5) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+.waveTextAnimated span:nth-of-type(6) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+.waveTextAnimated span:nth-of-type(7) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+.waveTextAnimated span:nth-of-type(8) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+@-webkit-keyframes wave-text {
+    00% {
+      transform: translateY(0em);
+    }
+    60% {
+      transform: translateY(-0.6em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+  }
+   
+@keyframes wave-text {
+    00% {
+      transform: translateY(0em);
+    }
+    60% {
+      transform: translateY(-0.6em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+  
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+  
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+  
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/*FORMATAÇÂO DAS PRINCIPAIS CLASSES INDEPENDENTES*/
+h1{
+    font-size: 80px;
+}
+h2{
+    font-family: 'Comfortaa';
+    font-size: 40px;
+}
+p{
+    font-family: 'Comfortaa';
+    font-size: 35px;
+}
+#BIO{
+    border-bottom: 2px solid white;
+}
