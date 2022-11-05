@@ -202,12 +202,6 @@ main div{
 #PRH{
     padding-top: 100px;
 }
-.folhas{
-    width: 100%;
-    height: 1000px;
-    position: absolute;
-    top: 0;
-}
 .sexuada{
     display: flex;
     align-items: center;
